@@ -10,23 +10,8 @@ int y = Convert.ToInt32(Console.ReadLine());
 
 int chet = 0;
 
-if (x > 0 && y > 0)
-{
-   Console.Write("Координаты находятся в первой четверти");
-}
-else if (x < 0 && y > 0)
-{
-   Console.Write("Координаты находятся во второй четверти");
-}
-else if (x < 0 && y > 0)
-{
-   Console.Write("Координаты находятся в третье четверти");
-}
-else if (x < 0 && y < 0)
-{
-   Console.Write("Координаты находятся в четвертой четверти");
-}
-else if (x == 0 || y == 0)
-{
-   Console.Write("Некорретно введены данные");
-}
+if (x > 0 && y > 0) Console.Write("Координаты находятся в первой четверти");
+else if (x < 0 && y > 0) Console.Write("Координаты находятся во второй четверти");
+else if (x < 0 && y > 0) Console.Write("Координаты находятся в третье четверти");
+else if (x < 0 && y < 0) Console.Write("Координаты находятся в четвертой четверти");
+else Console.Write("Некорретно введены данные");
