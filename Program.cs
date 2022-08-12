@@ -26,19 +26,36 @@
 // находит расстояние между ними в 2D
 // пространстве.
 
-Console.WriteLine("Введите координату Х точки А ");
-int xa = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координату Х точки А ");
+// int xa = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите координату Y точки А ");
-int ya = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координату Y точки А ");
+// int ya = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите координату Х точки B ");
-int xb = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координату Х точки B ");
+// int xb = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите координату Х точки B ");
-int yb = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите координату Х точки B ");
+// int yb = Convert.ToInt32(Console.ReadLine());
 
-double line = Math.Sqrt(((xa - ya) * (xa - ya)) + ((ya - yb) * (ya - yb)));
+// // double line = Math.Sqrt(((xa - ya) * (xa - ya)) + ((ya - yb) * (ya - yb)));
+// double line = Math.Sqrt((Math.Pow((xa - ya),2) + Math.Pow((xb - yb),2)));
 
-Console.Write("Расстояние между точками: ");
-Console.WriteLine(line);
+
+// Console.Write("Расстояние между точками: ");
+// Console.WriteLine(Math.Round (line, 2));
+
+// 22. Напишите программу, которая
+// принимает на вход число (N) и выдаёт таблицу
+// квадратов чисел от 1 до N.
+
+Console.Write("Введите целое число от 1 до N для нахождения квадратов всех чисел: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+int count = 1;
+
+while (count <= n)
+{
+    Console.WriteLine($" {count} -> {Math.Pow(count, 2)}");
+    count++;
+}
